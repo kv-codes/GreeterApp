@@ -13,10 +13,18 @@
         <div class="jumbotron text-center">
             <h1>Welcome to the Greeter!</h1>
             <h2>Simply enter your name then click "Submit" to be greeted!</h2>
-            <label for ="name">Enter your name here:</label>
-            <input type = "text" id="name" placeholder="Your name">
-            <button onclick= "greetMe()">Submit</button>
-            <p id="output"></p>
+            <form id="form_id">
+                <label for ="name">Enter your name here:</label>
+                <input type = "text" id="name" placeholder="Your name">
+                <input type="button" onclick= "greetMe()" value="Submit" id="greet-btn" ></button>
+                <p id="output"></p>
+
+
+                <input type="button" onclick="Reset()" id="reset-btn" value="Clear" ></button>
+
+            </form>
+
+
             
         </div>
 
