@@ -1,6 +1,5 @@
-let alertButton = document.querySelector('#alert-button');
-function clickListener(event){
-    event.preventDefault();
-    alert("You clicked me!");
-}
-alertButton.addEventListener('click', clickListener);
+function greetMe(){
+    let name = document.getElementById("name").value;
+    let greeting = "Hi there, " + name + ", have a wonderful day!";
+    document.getElementById("output").textContent=greeting;
+};
